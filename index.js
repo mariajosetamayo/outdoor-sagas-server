@@ -12,9 +12,6 @@ const config = require('./config')
 
 mongoose.Promise = global.Promise;
 
-
-
-
 // DB Setup
 
 mongoose.connect(config.DATABASE_URL);
