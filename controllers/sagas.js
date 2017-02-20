@@ -2,8 +2,6 @@ const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 const jwt = require('jwt-simple');
 const geocoder = require('google-geocoder');
-
-const config = require('../config');
 const Saga =  require('../models/saga');
 
 const geo = geocoder({
@@ -58,7 +56,7 @@ exports.addSaga = function (req, res){
 exports.userSagas = function (req, res){
   const jwtOptions = {
     jwtFromRequest: ExtractJwt.fromHeader('authorization'),
-    secretOrKey: config.secret
+    secretOrKey: process.env.SECRET
   };
   const userId = req.user._id;
   console.log(userId)
@@ -76,7 +74,7 @@ exports.userSagas = function (req, res){
 exports.allSagas = function (req, res){
   const jwtOptions = {
     jwtFromRequest: ExtractJwt.fromHeader('authorization'),
-    secretOrKey: config.secret
+    secretOrKey: process.env.SECRET
   };
   Saga.find({}, function(err, sagas){
     if(err){

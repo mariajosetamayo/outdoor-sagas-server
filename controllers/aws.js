@@ -12,7 +12,7 @@ aws.config.update({
 
 var s3 = new aws.S3();
 
-console.log(aws.config);
+
 
 exports.upload = multer({
   storage: multer.memoryStorage(),
