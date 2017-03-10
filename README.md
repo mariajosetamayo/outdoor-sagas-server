@@ -23,7 +23,6 @@ of the application. To start the front end of the application, please got to: ht
 
 ```
 	> git clone git@github.com:mariajosetamayo/outdoor-sagas-server.git
-	> cd app
 	> npm install
 	> npm start
 ```
