@@ -23,6 +23,6 @@ router(app);
 
 // Server Setup
 const port = process.env.PORT || 3090;
-const server = http.createServer(app); // create http server that knows how to receive requests and forward it to app
+const server = http.createServer(app); 
 server.listen(port);
 console.log('Server listening on:', port);

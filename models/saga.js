@@ -1,7 +1,5 @@
 var mongoose = require('mongoose');
 
-
-///// User schemas ///////
 var SagaSchema = mongoose.Schema({
     title : {type : String, required : true},
     people : {type : String, required : false},
@@ -15,10 +13,6 @@ var SagaSchema = mongoose.Schema({
     imageName: {type : String, required: false}
 });
 
-// User variable declared according to schema
 var Saga = mongoose.model('Saga', SagaSchema);
-
-
-///// Exports /////
 
 module.exports = Saga;
