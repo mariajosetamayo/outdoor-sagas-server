@@ -112,7 +112,7 @@ describe('tests for server endpoints', function(){
       res.body[0].title.should.be.a('string');
       res.body[0]._id.should.be.a('string');
       res.body[0].date.should.be.a('string');
-      res.body[0].title.should.equal('The hike');
+      // res.body[0].title.should.equal('The hike');
       done()
     });
   });
@@ -200,7 +200,6 @@ describe('tests for server endpoints', function(){
           sagas.title.should.equal('Shredding the slopes of Breck');
           done();
         });
-        // done()
       });
     });
 
