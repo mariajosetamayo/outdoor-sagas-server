@@ -15,4 +15,4 @@ deploy:
   app: dry-beach-22305
 
   on:
-    repo: mariajosetamayo/outdoor-sagas-app
+    repo: mariajosetamayo/outdoor-sagas-server
