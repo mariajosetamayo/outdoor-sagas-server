@@ -19,7 +19,7 @@ var runServer = function(callback) {
     if (err && callback) {
       return callback(err);
     }
-    app.listen(config.PORT, function() {
+    app.listen(app.port, function() {
       if (callback) {
         callback();
       }
