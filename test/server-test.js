@@ -35,9 +35,11 @@ if (require.main === module) {
   });
 };
 
-describe('main page', function(){
 
+describe('main page', function(){
+  this.timeout(5000)
   before(function(done) {
+    // this.timeout(5000)
     //Guarantees DB is connected BEFORE tests
     runServer(function() {
       User.remove(function(){console.log("db cleaned!")})
