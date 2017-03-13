@@ -15,7 +15,7 @@ var request = require('supertest');
 var server2 = request.agent('http://localhost:3090');
 
 var runServer = function(callback) {
-  mongoose.connect('mongodb://localhost/outdoor-sagas-test', function(err) {
+  mongoose.connect('mongodb://mariajosetamayo:milanka@ds023105.mlab.com:23105/shopping-list', function(err) {
     if (err && callback) {
       return callback(err);
     }
