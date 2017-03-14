@@ -14,27 +14,8 @@ chai.use(chaiHttp);
 var request = require('supertest');
 var server2 = request.agent('http://localhost:3090');
 
-var runServer = function(callback) {
-  console.log('asd');
-  mongoose.connect('mongodb://mariajosetamayo:milanka@ds023105.mlab.com:23105/shopping-list', function(err) {
-    if (err && callback) {
-      return callback(err);
-    }
-    app.listen(app.port, function() {
-      if (callback) {
-        callback();
-      }
-    });
-  });
-};
 
-if (require.main === module) {
-  runServer(function(err) {
-    if (err) {
-      console.error(err);
-    }
-  });
-};
+  'mongodb://mariajosetamayo:milanka@ds023105.mlab.com:23105/shopping-list'
 
 
 describe('main page', function(){
