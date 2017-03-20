@@ -10,7 +10,7 @@ Outdoor Sagas is a full-stack app that allows users to record, share, and save y
 
 <img src="https://cloud.githubusercontent.com/assets/16930791/23478982/3d49803c-fe80-11e6-9d1a-a39540df08b0.jpg" width="420" />  <img src="https://cloud.githubusercontent.com/assets/16930791/23479045/67517916-fe80-11e6-8a1b-53c549b2b8b0.jpg" width="400" height="247" />
 
-### Live view###
+### Live view ###
 
 https://outdoor-sagas.herokuapp.com/
 
