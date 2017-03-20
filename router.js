@@ -3,10 +3,8 @@ const Sagas = require('./controllers/sagas');
 const passportService = require('./services/passport');
 const passport = require('passport');
 const Aws = require('./controllers/aws');
-
 const requireAuth = passport.authenticate('jwt', { session: false }); // middleware that tells passport to use token, not cookies
 const requireSignin = passport.authenticate('local', {session: false});
-
 const multerUpload = Aws.upload.single('fileUploaded');
 
 module.exports = function(app){

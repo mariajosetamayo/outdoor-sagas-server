@@ -1,0 +1,18 @@
+language: node_js
+node_js: node
+services:
+- mongodb
+addons:
+  apt:
+    sources:
+    - mongodb-3.2-precise
+    packages:
+    - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: RXA4W4GHYGG/wEf/aIjVpcvsPElitniViUWSC+JwFkw+G7PSUuQesrvUcgsZUU3V1UdW+MtPflr10nqsUYiUP4WwZtf4U6JTrM045SRdrzXRsPQZjcLiFxXnQ9F3Ab1ocfsjTcVhxwaDNpvioJGF7ZHGKLHx/4Han+aQj3XzgOGw/XCy5V16VQPw4FS7HsDT0AueOIbiO68iW5Ce85HAH/iXRc0IvwnulA+n5yKCAs9tv18ioLyJEB4tmh7XBdWDHTqsgtSnJ+Fa4GU5T9ok7GGnYMAEIBgVooU0CEp+pDs9n/29W/kXiu1+1ug5avPCAvmyzCX6bbATAVd8K6eG98C94EgJnu2Y3vjClhZBTyHREoQee13AEyaP0ff3v2wsvHf6I3Hj8gS1FnEMxUFDsrUOD0sV9c8aA82Yu6/tXQJGbgug8nhQ2Zscy6gYwQewOXMyW/hqDIZKOMtdi8XaciWKFy+OzpDQWjTaalCCzrIazsTDm4ZOh5qjxXexgKDUYM9nbCLc7Zif/XPT96paAWdiaFoWOVdzmv14HzgM59kWx/6tu1R21giNOsanIGsmx44+Gl78MhCzCe1PH5kv28IPfGeW4RGoG7tG0+MeO1Yt4006Y2jw5XsoQvSSa0llooAUdSOQM/gaCRAeNOphcFUfu4c9uXnaQwhQWAjJZt8=
+  app: dry-beach-22305
+
+  on:
+    repo: mariajosetamayo/outdoor-sagas-server
