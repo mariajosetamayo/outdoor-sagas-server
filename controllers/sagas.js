@@ -131,7 +131,7 @@ exports.editSaga = function (req, res) {
           story: req.body.story,
           location: coordinates,
           userId: req.user._id,
-          imageName: req.body.imageName
+          // imageName: req.body.imageName
         }
         Saga.findOneAndUpdate(sagaId, updatedSaga,
           function(err, saga){
