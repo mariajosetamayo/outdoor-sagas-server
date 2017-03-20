@@ -1,6 +1,6 @@
 # Outdoor Sagas
 
-##Summary
+## Summary
 
 Outdoor Sagas is a full-stack app that allows users to record, share, and save your adventure memories all in one place.
 
@@ -10,16 +10,16 @@ Outdoor Sagas is a full-stack app that allows users to record, share, and save y
 
 <img src="https://cloud.githubusercontent.com/assets/16930791/23478982/3d49803c-fe80-11e6-9d1a-a39540df08b0.jpg" width="420" />  <img src="https://cloud.githubusercontent.com/assets/16930791/23479045/67517916-fe80-11e6-8a1b-53c549b2b8b0.jpg" width="400" height="247" />
 
-###Live view###
+### Live view###
 
 https://outdoor-sagas.herokuapp.com/
 
-###Getting Started###
+### Getting Started###
 
 Outdoor Sagas is divided into two repos: the app repo and the server repo. This is the server repo, which contains the back end
 of the application. To start the front end of the application, please got to: https://github.com/mariajosetamayo/outdoor-sagas-app
 
-####Getting started with the server package#####
+#### Getting started with the server package#####
 
 ```
 	> git clone git@github.com:mariajosetamayo/outdoor-sagas-server.git
@@ -27,7 +27,7 @@ of the application. To start the front end of the application, please got to: ht
 	> npm start
 ```
 
-##Technology used
+## Technology used
 
 - Outdoor Sagas is built using the MEAN stack.
 - The front-end is built using React.
