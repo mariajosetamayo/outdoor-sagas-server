@@ -14,12 +14,12 @@ Outdoor Sagas is a full-stack app that allows users to record, share, and save y
 
 https://outdoor-sagas.herokuapp.com/
 
-### Getting Started###
+### Getting Started ###
 
 Outdoor Sagas is divided into two repos: the app repo and the server repo. This is the server repo, which contains the back end
 of the application. To start the front end of the application, please got to: https://github.com/mariajosetamayo/outdoor-sagas-app
 
-#### Getting started with the server package#####
+#### Getting started with the server package #####
 
 ```
 	> git clone git@github.com:mariajosetamayo/outdoor-sagas-server.git
